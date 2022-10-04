@@ -5,13 +5,15 @@ class DrivableTrader <T> extends Trader<Drivable>{
      * @param inventory the inventory of the trader (from the parent class Trader)
      * @param wishlist  the wishlist of the trader (from the parent class Trader)
      * @param price     the amount of money the trader has (from the parent class Trader)
-     */
-    public DrivableTrader(List<Drivable> inventory,
-                          List<Drivable> wishlist,
-                          int price){
-        super(inventory, wishlist, price);
-    }
-    /** Another overridden constructor of the DrivableTrader class
+     *
+     * This type of constructor is commented out to avoid problems inside the test file
+     *
+     * public DrivableTrader(List<Drivable> inventory,
+     *                      List<Drivable> wishlist,
+     *                      int price){
+     *     super(inventory, wishlist, price);
+     * }
+     * Another overridden constructor of the DrivableTrader class
      *
      * @param price     the amount of money the trader has (from the parent class Trader)
      */
