@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Trader<T> {
+public class Trader<T>{
     private final List<T> inventory;
     private final List<T> wishlist;
     private int money;
@@ -35,9 +35,10 @@ public class Trader<T> {
         this.money = money;
     }
 
-    /* TODO: Add a new constructor that takes a single argument
+    /** TODO: Add a new constructor that takes a single argument
      *       representing the Trader's money. Give the Trader
      *       empty ArrayLists for their inventory and wishlist.
+     *
      * @param money the money of the trader
      */
     public Trader(int money){
@@ -47,7 +48,10 @@ public class Trader<T> {
     }
 
 
-    /* TODO: Implement the method addToWishlist that takes an
+
+
+
+    /** TODO: Implement the method addToWishlist that takes an
      *       object of type T and adds it to this Trader's wishlist.
      *
      * @param object an object to add in the Trader's wishlist
@@ -60,13 +64,12 @@ public class Trader<T> {
 
 
 
-    /* TODO: Implement the method getSellingPrice that takes an
+    /** TODO: Implement the method getSellingPrice that takes an
      *       object of type T and returns the object's price
      *       (via getPrice()) if it's Tradable. If not,
      *       return Tradable.MISSING_PRICE.
      *
      *       We will call this in exchangeMoney().
-     * 
      * @param object the object to get its price
      *
      * @return the price of the object.
@@ -127,9 +130,9 @@ public class Trader<T> {
     }
 
     /**
-     * Buy items from other.
+     * Buy items from others.
      *
-     * @return True iff at least one item was bought from other.
+     * @return True iff at least one item was bought from others.
      */
     public boolean buyFrom(Trader<T> other) {
         return other.sellTo(this);
